@@ -1,0 +1,18 @@
+nav#nav.nav
+    .nav__logo
+        a(href="#")
+            img(src="assets/img/josemariamqNegro.png" alt="logo")
+            p JoseMariaMQ CV
+    .nav__toggle-menu
+        div#toggle-menu.nav__icon
+            .first-bar
+            .second-bar
+            .third-bar
+#main-nav.main-nav
+    ul#main-menu.main-menu
+        each page, index in pages
+            li.main-menu__item
+                if index==0
+                    a(href="/").main-menu__link= page
+                else
+                    a(href=`#${pagesLink[index]}`).main-menu__link= page

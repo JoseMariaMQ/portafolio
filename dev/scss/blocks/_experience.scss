@@ -1,0 +1,36 @@
+.experience {
+  margin-top: 60px;
+  width: calc(100% - 40px);
+  grid-column: 1 / -1;
+  grid-row: 4 / span 1;
+  justify-self: center;
+  align-self: center;
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__description {
+    margin: 1rem 0;
+    border-radius: 5px;
+
+    -webkit-box-shadow: 0 0 30px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 0 30px -10px rgba(0,0,0,0.75);
+    box-shadow: 0 0 30px -10px rgba(0,0,0,0.75);
+  }
+
+  &__description1, &__description2 {
+    padding: 10px;
+  }
+
+  &__description1 {
+    padding: 2.5rem 10px;
+    text-align: center;
+    background-color: $background-color;
+    color: $text-color2;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+}

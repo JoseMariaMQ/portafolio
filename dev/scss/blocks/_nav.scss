@@ -1,0 +1,120 @@
+.nav {
+  grid-column: 1 / -1;
+  grid-row: 1 / span 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 80px;
+  grid-template-rows: 100px;
+  background-color: transparent;
+  align-items: center;
+  justify-content: flex-end;
+  color: $text-color2;
+  z-index: 1000;
+  transition: all .5s;
+
+  &__logo {
+    grid-column: 1 / span 1;
+
+    & a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $text-color2;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      margin-left: 1rem;
+    }
+
+    & p {
+      margin-left: 1rem;
+    }
+  }
+
+  &__toggle-menu {
+    height: 40px;
+    width: 40px;
+  }
+
+  &__icon {
+    height: 40px;
+    width: 40px;
+    position: relative;
+
+    & .first-bar, .second-bar, .third-bar {
+      position: absolute;
+      width: 30px;
+      height: 1px;
+      background: $text-color2;
+      border-radius: 5px;
+      transition: transform 1s;
+    }
+
+    & .first-bar {
+      top: 10px;
+    }
+    & .second-bar {
+      width: 25px;
+      top: 20px;
+    }
+    & .third-bar {
+      top: 30px;
+    }
+  }
+
+  .show .first-bar {
+    transform: rotate(-45deg);
+    top: 1.5rem;
+  }
+  .show .second-bar {
+    width: 0;
+  }
+  .show .third-bar {
+    transform: rotate(45deg);
+    top: 1.5rem;
+  }
+
+}
+.nav__show {
+  position: fixed;
+  margin-left: calc(-100% + (100% - 270px));
+}
+.nav__color {
+  background-color: $background-color;
+}
+
+.main-nav {
+  position: fixed;
+  //width: calc(100% - 80px);
+  width: 295px;
+  background-image: linear-gradient($background-color, #000);
+  height: 100vh;
+  margin-left: 100%;
+  z-index: 10000;
+  transform: scale(0);
+  transition: all .5s;
+}
+.main-nav__show{
+  position: fixed;
+  //margin-left: 80px;
+  margin-left: calc(100% - 295px);
+  transform: scale(1);
+}
+
+.main-nav .main-menu {
+  @include reset-list;
+
+  margin-top: 60px;
+
+  &__item {
+    text-transform: uppercase;
+    line-height: 4;
+    margin-left: 1.5rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $text-color2;
+  }
+}

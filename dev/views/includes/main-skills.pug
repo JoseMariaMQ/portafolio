@@ -1,0 +1,9 @@
+section#skills.skills
+    h1.skills__title Habilidades
+    .skills__items
+        each skill, index in skills
+            div(class="skills__item" + index)= skill
+            div(class="skills__progress" + index)
+                progress(class="skills__bar" + index max="100" value=skillsValue[index])
+            span(class="skills__value" + index)= skillsValue[index] + "%"
+
