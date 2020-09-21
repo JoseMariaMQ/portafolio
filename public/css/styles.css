@@ -278,7 +278,7 @@ body { display: grid; grid-template-columns: 1fr; grid-template-rows: 550px 1fr 
 
 .skills__value7 { grid-column: 2 / span 1; grid-row: 15 / span 1; }
 
-@media screen and (min-width: 1024px) { .skills__items { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; grid-template-rows: repeat(8, 1fr); }
+@media screen and (min-width: 768px) { .skills__items { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; grid-template-rows: repeat(8, 1fr); }
   .skills__item0 { grid-column: 1 / span 1; grid-row: 1 / span 1; }
   .skills__progress0 { grid-column: 1 / span 2; grid-row: 2 / span 1; margin-right: 1rem; }
   .skills__value0 { grid-column: 2 / span 1; grid-row: 1 / span 1; margin-right: 1rem; }
@@ -312,13 +312,13 @@ body { display: grid; grid-template-columns: 1fr; grid-template-rows: 550px 1fr 
 
 .portfolio__icon-checked { background-color: var(--background-color); color: var(--text-color2); }
 
-.portfolio__img1, .portfolio__img2 { margin: 1rem 0; border-radius: 5px; box-shadow: 0 0 30px -10px rgba(0, 0, 0, 0.75); }
+.portfolio__img1, .portfolio__img2 { margin: 1rem 0; box-shadow: 0 0 30px -10px rgba(0, 0, 0, 0.75); }
 
 .portfolio__img1 img, .portfolio__img2 img { width: 100%; }
 
 .portfolio__img-hidden { display: none; }
 
-@media screen and (min-width: 1024px) { .portfolio__img { -moz-column-count: 2; column-count: 2; width: 100%; }
+@media screen and (min-width: 768px) { .portfolio__img { -moz-column-count: 2; column-count: 2; width: 100%; }
   .portfolio__img1, .portfolio__img2 { margin: 0 0 1rem; } }
 
 .experience { margin-top: 60px; width: calc(100% - 40px); grid-column: 1 / -1; grid-row: 4 / span 1; justify-self: center; align-self: center; }
@@ -331,9 +331,11 @@ body { display: grid; grid-template-columns: 1fr; grid-template-rows: 550px 1fr 
 
 .experience__description1 { padding: 2.5rem 10px; text-align: center; background-color: var(--background-color); color: var(--text-color2); border-top-left-radius: 5px; border-top-right-radius: 5px; }
 
-@media screen and (min-width: 1024px) { .experience__description { display: grid; grid-template-columns: 240px 1fr; grid-template-rows: 1fr; }
+@media screen and (min-width: 768px) { .experience__description { display: grid; grid-template-columns: 200px 1fr; grid-template-rows: 1fr; }
   .experience__description1 { grid-column: 1 / span 1; border-top-right-radius: 0; border-bottom-left-radius: 5px; }
   .experience__description2 { grid-column: 2 / span 1; padding: 1rem 2rem; } }
+
+@media screen and (min-width: 1024px) { .experience__description { grid-template-columns: 240px 1fr; } }
 
 .education { margin-top: 60px; width: calc(100% - 40px); grid-column: 1 / -1; grid-row: 5 / span 1; justify-self: center; align-self: center; }
 
@@ -349,9 +351,11 @@ body { display: grid; grid-template-columns: 1fr; grid-template-rows: 550px 1fr 
 
 .education__description2 h5 { margin-top: 0; color: var(--background-color3); }
 
-@media screen and (min-width: 1024px) { .education__description { display: grid; grid-template-columns: 240px 1fr; grid-template-rows: 1fr; }
+@media screen and (min-width: 768px) { .education__description { display: grid; grid-template-columns: 200px 1fr; grid-template-rows: 1fr; }
   .education__description1 { grid-column: 1 / span 1; border-top-right-radius: 0; border-bottom-left-radius: 5px; }
   .education__description2 { grid-column: 2 / span 1; padding: 1rem 2rem; } }
+
+@media screen and (min-width: 1024px) { .education__description { grid-template-columns: 240px 1fr; } }
 
 .contact { background-image: url("../assets/img/staticmap.jpg"); width: 100%; margin-top: 60px; grid-column: 1 / -1; grid-row: 6 / span 1; justify-self: center; align-self: center; display: grid; }
 
@@ -385,13 +389,15 @@ body { display: grid; grid-template-columns: 1fr; grid-template-rows: 550px 1fr 
 
 .contact__items p:nth-child(2), .contact__items p:nth-child(4), .contact__items p:nth-child(6) { margin-top: 5px; font-size: .9rem; }
 
-@media screen and (min-width: 1024px) { .contact__container { grid-template-columns: 1fr 1fr; grid-template-rows: 65px 1fr; width: 550px; margin: 60px 0; }
+@media screen and (min-width: 768px) { .contact__container { grid-template-columns: 1fr 1fr; grid-template-rows: 65px 1fr; width: 510px; margin: 60px 0; }
   .contact__title { grid-column: 1 / -1; grid-row: 1 / span 1; }
   .contact__inner-addon { margin: 30px 0; }
   .contact__message, .contact__submit { margin: 30px 0; }
   .contact__submit { margin-bottom: 20px; }
   .contact__items p:first-child { margin-top: 0; }
   .contact__items p:nth-child(2), .contact__items p:nth-child(4), .contact__items p:nth-child(6) { margin: 5px 0 30px; font-size: .9rem; } }
+
+@media screen and (min-width: 1024px) { .contact__container { width: 550px; } }
 
 .footer { margin-top: 25px; text-align: center; }
 

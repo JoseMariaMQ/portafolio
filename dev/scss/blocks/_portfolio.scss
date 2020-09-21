@@ -30,7 +30,6 @@
 
   &__img1, &__img2 {
     margin: 1rem 0;
-    border-radius: 5px;
 
     -webkit-box-shadow: 0 0 30px -10px rgba(0,0,0,0.75);
     -moz-box-shadow: 0 0 30px -10px rgba(0,0,0,0.75);
@@ -45,7 +44,7 @@
   }
 }
 
-@include laptop {
+@include tablet {
   .portfolio {
 
     &__img {

@@ -96,13 +96,13 @@
   }
 }
 
-@include laptop {
+@include tablet {
   .contact {
 
     &__container {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 65px 1fr;
-      width: 550px;
+      width: 510px;
       margin: 60px 0;
     }
     &__title {
@@ -128,6 +128,15 @@
         margin: 5px 0 30px;
         font-size: .9rem;
       }
+    }
+  }
+}
+
+@include laptop {
+  .contact {
+
+    &__container {
+      width: 550px;
     }
   }
 }

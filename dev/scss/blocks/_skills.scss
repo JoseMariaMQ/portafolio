@@ -156,7 +156,7 @@
   }
 }
 
-@include laptop {
+@include tablet {
   .skills{
     &__items {
       display: grid;
