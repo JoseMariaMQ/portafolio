@@ -33,6 +33,10 @@
     justify-self: stretch;
     padding: 10px;
 
+    & label {
+      font-weight: bold;
+    }
+
     & input {
       width: 100%;
       border-radius: 15px;
@@ -88,6 +92,7 @@
 
     & p:nth-child(1), p:nth-child(3), p:nth-child(5) {
       margin-bottom: 0;
+      font-weight: bold;
     }
     & p:nth-child(2), p:nth-child(4), p:nth-child(6) {
       margin-top: 5px;
