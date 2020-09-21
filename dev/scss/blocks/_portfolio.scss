@@ -44,3 +44,17 @@
     display: none;
   }
 }
+
+@include laptop {
+  .portfolio {
+
+    &__img {
+      column-count: 2;
+      width: 100%;
+    }
+
+    &__img1, &__img2 {
+      margin: 0 0 1rem;
+    }
+  }
+}

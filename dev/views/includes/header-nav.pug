@@ -8,11 +8,19 @@ nav#nav.nav
             .first-bar
             .second-bar
             .third-bar
+    .nav__main-nav
+        ul.nav__main-menu
+            each page, index in pages
+                li.nav__item
+                    if index === 0
+                        a(href="/").nav__link= page
+                    else
+                        a(href=`#${pagesLink[index]}`).nav__link= page
 #main-nav.main-nav
     ul#main-menu.main-menu
         each page, index in pages
             li.main-menu__item
-                if index==0
+                if index === 0
                     a(href="/").main-menu__link= page
                 else
                     a(href=`#${pagesLink[index]}`).main-menu__link= page

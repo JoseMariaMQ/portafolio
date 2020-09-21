@@ -28,3 +28,38 @@
     margin-top: 0;
   }
 }
+
+@include laptop {
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    &__description {
+      grid-column: 1 / span 1;
+      margin-right: 2rem;
+    }
+    &__info {
+      grid-column: 2 / span 1;
+      margin-left: 2rem;
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      grid-template-rows: 59.16px auto auto auto;
+    }
+
+    &__title {
+      grid-column: 1 / -1;
+      grid-row: 1 / span 1;
+    }
+    &__subtitle {
+      margin: 0;
+    }
+    &__subtitle:nth-child(2) {
+      grid-column: 1 / span 1;
+      grid-row: 2 / span 1;
+    }
+    &__text:nth-child(3) {
+      grid-column: 2 / span 1;
+      grid-row: 2 / span 1;
+    }
+  }
+}
