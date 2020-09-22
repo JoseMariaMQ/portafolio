@@ -145,3 +145,12 @@
     }
   }
 }
+
+@include desktop {
+  .contact {
+
+    &__container {
+      width: 700px;
+    }
+  }
+}

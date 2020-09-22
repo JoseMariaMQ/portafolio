@@ -63,3 +63,13 @@
     }
   }
 }
+
+@include desktop {
+  .experience {
+    width: calc(100% - 300px);
+
+    &__description {
+      grid-template-columns: 300px 1fr;
+    }
+  }
+}

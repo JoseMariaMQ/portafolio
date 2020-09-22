@@ -63,3 +63,9 @@
     }
   }
 }
+
+@include desktop {
+  .about {
+    width: calc(100% - 300px);
+  }
+}

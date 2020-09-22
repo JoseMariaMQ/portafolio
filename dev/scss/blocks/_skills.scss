@@ -286,3 +286,8 @@
   }
 }
 
+@include desktop {
+ .skills {
+   width: calc(100% - 300px);
+ }
+}
