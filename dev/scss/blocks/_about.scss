@@ -27,6 +27,8 @@
   &__text {
     margin-top: 0;
   }
+  animation-duration: .5s;
+  animation-name: appear;
 }
 
 @include laptop {

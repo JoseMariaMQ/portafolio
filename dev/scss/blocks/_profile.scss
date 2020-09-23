@@ -44,7 +44,11 @@
     background-color: $background-color;
     width: 140px;
     margin: 0 .5rem;
+
+    animation-duration: .5s;
+    animation-name: appear;
   }
+
   &__bottom:hover {
     background-color: $background-color2;
   }

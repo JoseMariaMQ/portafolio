@@ -2,6 +2,14 @@
 @import url("https://fonts.googleapis.com/css?family=Cabin:400,600");
 :root { --text-color: #2C2C2C; --text-color2: #EEE; --background-color: #0D47A1; --background-color2: #387EE9; --background-color3: #888; --background-color4: #AFBFD1; }
 
+.animations { -webkit-animation-duration: .5s; animation-duration: .5s; -webkit-animation-name: appear; animation-name: appear; }
+
+@-webkit-keyframes appear { from { transform: scale(0); }
+  to { transform: scale(1); } }
+
+@keyframes appear { from { transform: scale(0); }
+  to { transform: scale(1); } }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document ========================================================================== */
 /** 1. Correct the line height in all browsers. 2. Prevent adjustments of font size after orientation changes in iOS. */
@@ -133,7 +141,7 @@ body { display: grid; grid-template-columns: 1fr; grid-template-rows: 550px 1fr 
 
 .nav__icon { height: 40px; width: 40px; position: relative; }
 
-.nav__icon .first-bar, .nav__icon .second-bar, .nav__icon .third-bar { position: absolute; width: 30px; height: 1px; background: var(--text-color2); border-radius: 5px; transition: transform 1s; }
+.nav__icon .first-bar, .nav__icon .second-bar, .nav__icon .third-bar { position: absolute; width: 30px; height: 1px; background: var(--text-color2); border-radius: 5px; transition: transform 1s linear; }
 
 .nav__icon .first-bar { top: 10px; }
 
@@ -153,7 +161,7 @@ body { display: grid; grid-template-columns: 1fr; grid-template-rows: 550px 1fr 
 
 .nav__color { background-color: var(--background-color); }
 
-.main-nav { position: fixed; width: 295px; background-image: linear-gradient(var(--background-color), #000); height: 100vh; margin-left: 100%; z-index: 10000; transform: scale(0); transition: all .5s; }
+.main-nav { position: fixed; width: 295px; background-image: linear-gradient(var(--background-color), #000); height: 100vh; margin-left: 100%; z-index: 10000; transform: scale(0); transition: all .5s linear; }
 
 .main-nav__show { position: fixed; margin-left: calc(100% - 295px); transform: scale(1); }
 
@@ -186,7 +194,7 @@ body { display: grid; grid-template-columns: 1fr; grid-template-rows: 550px 1fr 
 
 .profile__subtitle { font-size: .9rem; font-weight: bold; margin-bottom: 2rem; }
 
-.profile__bottom { display: inline-block; text-decoration: none; font-size: .8rem; color: var(--text-color2); padding: 1rem .75rem; line-height: 1.25; border-radius: .25rem; transition: all .15s ease-in-out; background-color: var(--background-color); width: 140px; margin: 0 .5rem; }
+.profile__bottom { display: inline-block; text-decoration: none; font-size: .8rem; color: var(--text-color2); padding: 1rem .75rem; line-height: 1.25; border-radius: .25rem; transition: all .15s ease-in-out; background-color: var(--background-color); width: 140px; margin: 0 .5rem; -webkit-animation-duration: .5s; animation-duration: .5s; -webkit-animation-name: appear; animation-name: appear; }
 
 .profile__bottom:hover { background-color: var(--background-color2); }
 
@@ -198,7 +206,7 @@ body { display: grid; grid-template-columns: 1fr; grid-template-rows: 550px 1fr 
 
 .main { display: grid; grid-template-columns: 1fr; grid-template-rows: auto auto auto auto auto auto; }
 
-.about { width: calc(100% - 40px); grid-column: 1 / -1; grid-row: 1 / span 1; justify-self: center; align-self: center; margin-top: 60px; border-radius: 5px; box-shadow: 0 0 30px -10px rgba(0, 0, 0, 0.75); }
+.about { width: calc(100% - 40px); grid-column: 1 / -1; grid-row: 1 / span 1; justify-self: center; align-self: center; margin-top: 60px; border-radius: 5px; box-shadow: 0 0 30px -10px rgba(0, 0, 0, 0.75); -webkit-animation-duration: .5s; animation-duration: .5s; -webkit-animation-name: appear; animation-name: appear; }
 
 .about__description, .about__info { margin: 10px; }
 

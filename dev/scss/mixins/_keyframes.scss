@@ -1,0 +1,13 @@
+.animations {
+  animation-duration: .5s;
+  animation-name: appear;
+}
+
+@keyframes appear {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}

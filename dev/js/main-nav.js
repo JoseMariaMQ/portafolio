@@ -2,7 +2,6 @@ const headerNav = document.getElementById('nav')
 const mainNav = document.getElementById('main-nav')
 const toggleMenu = document.getElementById('toggle-menu')
 
-const body = document.getElementById('body')
 const header = document.getElementById('header')
 const nav = document.getElementById('nav')
 
@@ -30,7 +29,7 @@ toggleMenu.addEventListener('click', (e) => {
 })
 
 //Change color nav bar when scrolling and header bottom position <= 100px
-window.addEventListener('scroll', (e) => {
+window.addEventListener('scroll', () => {
     if(header.getBoundingClientRect().bottom <= 100) {
         nav.classList.add('nav__color')
     } else {
