@@ -172,9 +172,9 @@
       <section class="contact" id="contact">
         <div class="contact__container" id="contact-container">
           <h1 class="contact__title">Contáctame</h1>
-          <div class="contact__form">
+          <div class="contact__form" id="contact-form">
             <form action="contact_process.php" method="POST">
-              <label>No dudes en contactarme</label>
+              <label id="contact-message">No dudes en contactarme</label>
               <div class="contact__inner-addon"><i class="fas fa-user-circle"></i>
                 <input type="text" name="name" placeholder="Nombre" required="required"/>
               </div>
@@ -185,7 +185,7 @@
                 <input type="email" name="_replyto" placeholder="E-mail" required="required"/>
               </div>
               <textarea class="contact__message" name="message" placeholder="Tu mensaje" rows="3" required="required"></textarea>
-              <button class="contact__submit" type="submit">Enviar</button>
+              <button class="contact__submit" type="submit" id="contact-submit">Enviar</button>
             </form>
           </div>
           <div class="contact__items">
