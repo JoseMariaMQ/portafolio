@@ -2,7 +2,7 @@ section#contact.contact
     #contact-container.contact__container
         h1.contact__title Contáctame
         .contact__form
-            form
+            form(action="contact_process.php" method="POST")
                 label No dudes en contactarme
                 .contact__inner-addon
                     i.fas.fa-user-circle
@@ -12,7 +12,7 @@ section#contact.contact
                     input(type="text" name="subject" placeholder="Asunto" required="required")
                 .contact__inner-addon
                     i.fas.fa-envelope
-                    input(type="email" name="email" placeholder="E-mail" required="required")
+                    input(type="email" name="_replyto" placeholder="E-mail" required="required")
                 textarea(name="message" placeholder="Tu mensaje" rows="3" required="required" ).contact__message
                 button(type="submit").contact__submit Enviar
         .contact__items
