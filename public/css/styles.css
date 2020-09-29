@@ -343,6 +343,8 @@ body { display: grid; grid-template-columns: 1fr; grid-template-rows: 550px 1fr 
 
 .contact__form textarea:focus { outline: none; }
 
+.contact__form iframe { display: none; }
+
 .contact__message, .contact__submit { margin-top: 20px; border: none; }
 
 .contact__submit { background-color: var(--background-color); color: var(--text-color2); border: none; border-radius: 3px; font-size: .8rem; padding: 8px 15px; }
