@@ -8,7 +8,9 @@ section#portfolio.portfolio
     #portfolio-img.portfolio__img
         each project1 in projects1
             .portfolio__img1
-                img(src="assets/img/" + project1)
+                a(href="" + projects1URL[projects1.indexOf(project1)] target="_blank")
+                    img(src="assets/img/" + project1)
         each project2 in projects2
             .portfolio__img2
-                img(src="assets/img/" + project2)
+                a(href="" + projects2URL[projects2.indexOf(project2)] target="_blank")
+                    img(src="assets/img/" + project2)
